@@ -101,22 +101,82 @@ input, textarea, select
   font-family: $default-font
   font-size: 16px
   color: #000000
-  border: none
+  border: 1px solid transparent
     radius: 10px
   background: #fff
   width: 100%
   height: 40px
-
+  transition: .3s ease
   &::placeholder
     color: #A2A2A2
 
   &:hover, &:focus
     outline: none
     box-shadow: none
+    background: #E8E8E8
+    color: #000000
+  &:focus
+    border: 1px solid #000000
+    background: #E8E8E8
+    color: #000
+
+textarea
+  height: 91px
+  background: #E8E8E8
+  padding: 10px
+  border-radius: 10px
+
+.input-title
+  width: 100%
+  display: block
+  padding: 0 10px 5px
+  color: #C4C4C4
+  font-size: 12px
 
 label
   width: 100%
   display: block
+
+.checkbox
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: $default-font
+  margin: 0
+
+.inp-check
+  display: none
+
+.checkbox-custom
+  position: relative
+  margin: 0 10px 0 0
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 20px
+  height: 20px
+  min-width: 20px
+  background: #E8E8E8
+  border-radius: 3px
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    width: 16px
+    height: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.inp-check:checked + .checkbox-custom
+  background: #fff
+  &:before
+    background: url("../img/checkbox.svg") no-repeat center
+      size: 16px
+
 
 .btn, button
   outline: none
@@ -147,7 +207,17 @@ label
 
 .btn-white
   background: #fff
+  color: #000
+  &:hover
+    background: #E8E8E8
+    color: #000
 
+.btn-black
+  background: #000
+  color: #fff
+  &:hover
+    background: $accent
+    color: #fff
 
 .container
   max-width: 1560px
@@ -231,6 +301,7 @@ h3
       &__icon
         stroke: $accent
         transform: rotate(180deg)
+
 
 .sorting-box
   background: #fff
@@ -733,9 +804,21 @@ main
         color: #000
   .form-search
     input
-      color: #A2A2A2
+      background: #E8E8E8
+      color: #000000
       &::placeholder
         color: #A2A2A2
+    &:hover, &:focus, &:visited
+      input
+        background: #fff
+        color: #000000
+        &::placeholder
+          color: #000000
+        &:hover, &:focus
+          background: #fff
+          color: #000000
+      button
+        stroke: #000
 
 .links-blue
   text-decoration: underline
@@ -903,7 +986,7 @@ main
 
 .result-search
   width: 100%
-  margin-bottom: 45px
+  margin-bottom: 25px
   h3
     margin: 0 0 15px
     font-size: 18px
@@ -916,9 +999,9 @@ main
   flex-wrap: wrap
   font-size: 14px
   li
-    margin: 0 10px 0 0
+    margin: 0 10px 10px 0
     &:last-child
-      margin: 0
+      margin: 0 0 10px
 
 .list-category__links
   height: 34px
@@ -958,6 +1041,344 @@ main
   &:after
     transform: rotate(135deg)
 
+//section-callback
+.section-callback
+  padding: 148px 0 142px
+
+.form-callback
+  margin: 0 auto
+  max-width: 430px
+  width: 100%
+  label
+    margin: 0 0 25px
+  input, textarea
+    font-size: 14px
+  input
+    padding: 0 10px
+    background: #E8E8E8
+  .checkbox
+    margin: 47px 0 20px
+    font-size: 14px
+    justify-content: flex-start
+  button
+    max-width: none
+    width: 100%
+    color: #4A4A4A
+    &:disabled
+      background: #989898
+
+.btn-play
+  font-size: 14px
+  padding: 0 30px
+  position: absolute
+  left: 50%
+  top: 50%
+  z-index: 1
+  transform: translate(-50%,-50%)
+  &__icon
+    fill: #fff
+    width: 21px
+    height: 21px
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 0 0 13px
+
+.product-video
+  position: relative
+  width: 100%
+  border-radius: 10px
+  overflow: hidden
+  height: 538px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    height: 100%
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3))
+    mix-blend-mode: multiply
+
+.product-image
+  width: 100%
+  margin: 0 0 35px
+  height: 538px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 10px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.frames-program
+  margin: 70px 0 0
+  h3
+    margin: 0 0 20px
+
+.product-page
+  padding: 38px 0 100px
+
+.frames-program-wrapper
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  justify-content: space-between
+
+.frames-program-box
+  margin: 0 0 20px
+  width: calc(50% - 10px)
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 262px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+h1
+  font-size: 40px
+  font-weight: 900
+  margin: 0 0 8px
+
+.subtitle
+  font-size: 20px
+  font-weight: 500
+
+.btn-add-favorite
+  width: 50px
+  height: 50px
+  padding: 10px 8px
+  fill: #C4C4C4
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 10px
+  margin: 0 20px 0 0
+  &:focus, &:hover
+    background: #fff
+    fill: #FCB415
+
+.product-info__btn
+  display: flex
+  align-items: center
+
+
+.product-info-row
+  margin: 0 0 30px
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+  h4
+    color: #989898
+    font-size: 14px
+    font-weight: 500
+    margin: 0 0 5px
+    width: 100%
+  .list-category
+    max-width: 430px
+
+.btn-order
+  padding: 0 34px
+
+.characteristics-box
+  margin: 0 0 20px
+  font-size: 18px
+  &:last-child
+    margin: 0
+  h4
+    color: #989898
+    font-size: 14px
+    font-weight: 500
+    margin: 0 0 5px
+    width: 100%
+
+.characteristics-row
+  justify-content: flex-start
+  align-items: flex-start
+  .characteristics-box
+    margin-right: 35px
+    &:last-child
+      margin-right: 0
+
+
+.annotation-box
+  span
+    font-size: 20px
+
+.subtitle-yes
+  font-size: 18px
+
+.accordion
+  width: 100%
+  background: transparent
+  .card
+    background: transparent
+    border: none
+      radius: 0
+    margin: 0 0 5px
+    &:last-child
+      margin: 0
+  .card-header
+    cursor: pointer
+    color: #000000
+    font-size: 20px
+    margin: 0
+    line-height: 160%
+    padding: 0
+    border: none
+      radius: 0
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: flex-start
+  .collapsed
+    .card-header
+      color: #666666
+    .accordion-arrow
+      display: flex
+  .card-body
+    padding: 5px 0 25px
+    border-bottom: 1px solid #989898
+    font-size: 14px
+    .box-text
+      p
+        margin: 0
+
+.accordion-list
+  margin: 30px 0 0
+
+.accordion-arrow
+  margin: 0 0 0 25px
+  fill: none
+  width: 10px
+  height: 12px
+  stroke: #666666
+  display: none
+  align-items: center
+  justify-content: center
+
+.modal-backdrop.show
+  opacity: 1
+
+.modal-dialog
+  max-width: none
+  width: 100%
+  margin: 0 auto
+  height: 100%
+  max-height: none
+
+
+.product-slider-wrapper
+  max-width: 1214px
+  width: 100%
+  margin: 0 auto
+
+.modal-content
+  background: transparent
+  border: none
+    radius: 0
+  padding: 98px 0
+
+.modal-header
+  border: none
+  padding: 0
+  position: relative
+  z-index: 1
+  .close
+    opacity: 1
+    padding: 0
+    position: absolute
+    top: 82px
+    right: 79px
+    width: 20px
+    height: 20px
+    cursor: pointer
+    &:before, &:after
+      content: ''
+      position: absolute
+      left: 10px
+      top: 0
+      width: 1px
+      height: 100%
+      background: #fff
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.modal-body
+  padding: 0
+
+.product-slider-preview
+  .slick-slide
+    opacity: 0.4
+    mix-blend-mode: normal
+  .slick-current
+    opacity: 1
+
+.product-slider-preview__item
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 177px
+  height: 110px
+  margin: 0 20px 0 0
+  border-radius: 10px
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.product-slider-max
+  margin: 0 0 50px
+
+.product-slider-max__item
+  width: 100%
+  height: 724px
+  display: flex
+  align-items: center
+  justify-content: center
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.slider-nav
+  position: absolute
+  top: 50%
+  transform: translate(0,-50%)
+  padding: 0 70px
+  width: 100%
+  left: 0
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.slick-arrow
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  width: 60px
+  height: 60px
+  background: #4A4A4A
+  fill: none
+  stroke: #fff
+  padding: 15px
 
 
 @import "media"

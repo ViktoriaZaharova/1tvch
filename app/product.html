@@ -1,0 +1,884 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>1tvch</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <!--	<link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu">
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Телеканалы</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Операторам</a></li>
+    <li><a href="#">Рекламодателям</a></li>
+    <li><a href="#">Игры</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <ul class="list-language">
+    <li><a href="#">EN</a></li>
+    <li><a href="#" class="active">ru</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        <ul class="menu">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Телеканалы</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Операторам</a></li>
+          <li><a href="#">Рекламодателям</a></li>
+          <li><a href="#">Игры</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="list-language">
+          <li><a href="#">EN</a></li>
+          <li><a href="#" class="active">ru</a></li>
+        </ul>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page product-page">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="menu-category">
+          <li><a href="#" class="menu-category__links">Телеканалы</a></li>
+          <li><a href="#" class="menu-category__links active">Контент</a></li>
+          <li><a href="favorites.html" class="menu-category__links">Избранное</a></li>
+        </ul>
+      </div>
+      <div class="col-12 mb-40 d-flex flex-wrap align-items-center filter-category-wrapper">
+        <div class="sorting-wrapper">
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Активный отдых</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Познавательные передачи</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Путешествия</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Животный мир</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Жизнь за городом</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Молодежные передачи</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <a href="#" class="close-dropdown-menu"></a>
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Найти"></label>
+          <button type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 d-block d-lg-none">
+        <h1>Собачники</h1>
+        <div class="subtitle">Заводчики собак</div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 col-lg-7">
+        <div class="product-image"><img src="img/favorite8.jpeg" alt=""></div>
+        <div class="product-video">
+          <img src="img/preview-video.jpeg" alt="">
+          <a href="https://www.youtube.com/embed/WjoplqS1u18" class="btn btn-black btn-play" data-fancybox="video">
+            <span class="btn-play__text">Смотреть трейлер</span>
+            <span class="btn-play__icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#play"></use></svg></span>
+          </a>
+        </div>
+        <div class="frames-program d-none d-lg-block">
+          <h3>Кадры из программы</h3>
+
+          <div class="frames-program-wrapper">
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame1.jpg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame2.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame3.jpg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/preview-video.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame4.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame5.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-5">
+        <div class="product-info">
+          <div class="product-info-row">
+            <div class="product-info__name d-none d-lg-block">
+              <h1>Собачники</h1>
+              <div class="subtitle">Заводчики собак</div>
+            </div>
+            <div class="product-info__btn">
+              <a href="#" class="btn-add-favorite">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#heart"></use>
+                </svg>
+              </a>
+              <a href="#" class="btn btn-white btn-order">Заказать контент</a>
+            </div>
+          </div>
+
+          <div class="product-info-row characteristics-row">
+            <div class="characteristics-box w-100">
+              <h4>Год выпуска</h4><span>2010 – 2021 год</span>
+            </div>
+            <div class="characteristics-box w-100">
+              <h4>Страна производитель</h4><span>Россия</span>
+            </div>
+            <div class="characteristics-box">
+              <h4>Количество серий</h4><span>112</span>
+            </div>
+            <div class="characteristics-box">
+              <h4>Хронометраж серии</h4><span>15 минут</span>
+            </div>
+            <div class="characteristics-box">
+              <h4>Общий хронометраж</h4><span>134 часа</span>
+            </div>
+          </div>
+
+          <div class="product-info-row">
+            <div class="characteristics-box annotation-box w-100">
+              <h4>Расширенная аннотация</h4>
+              <span>Главный герой — маленький щенок Аля, помесь с борзой, который растёт на глазах зрителей. В нашем «ЖЖ» есть все: забавные и трагические истории, полезные сведения, любопытные наблюдения, практические советы.</span>
+            </div>
+          </div>
+
+          <div class="product-info-row">
+            <div class="subtitle-yes">Есть субтитры</div>
+          </div>
+
+          <div class="product-info-row">
+            <div class="tags-wrapper">
+              <h4>Теги</h4>
+              <ul class="list-category">
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Животноводство</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Про собак</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Кинологи</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Заводчики</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Помощь животным</span>
+                  </div>
+                </li>
+                <li>
+                  <div class="list-category__links">
+                    <span class="list-category__links-text">Бойцовские собаки</span>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-info-row d-none d-lg-block">
+            <h4>Описание серий</h4>
+            <div class="accordion" id="accordionExample">
+              <div class="card">
+                <div class="card-header" id="headingOne" data-toggle="collapse" data-target="#collapseOne"
+                     aria-expanded="true" aria-controls="collapseOne">
+                  <div class="card-header__name">1 сезон</div>
+                  <div class="accordion-arrow">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                     data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="box-text">
+                      <p>1 серия</p>
+                      <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего
+                        бывшего
+                        учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                        его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                        оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                        Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                        которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                        Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                      <ul class="accordion-list">
+                        <li>2 серия</li>
+                        <li>3 серия</li>
+                        <li>4 серия</li>
+                        <li>5 серия — «Украденное оружие»</li>
+                        <li>6 серия — «Водобоязнь»</li>
+                        <li>7 серия — «Кощей»</li>
+                        <li>8 серия — «Бром»</li>
+                        <li>9 серия — «Купюра»</li>
+                        <li>10 серия — «Бессонница»</li>
+                        <li>11 серия — «Артист»</li>
+                        <li>12 серия — «Мститель»</li>
+                        <li>13 серия — «Малыш»</li>
+                        <li>14 серия — «Черная метка»</li>
+                        <li>15 серия — «Амнезия»</li>
+                        <li>16 серия — «Побег»</li>
+                        <li>17 серия — «Фальшивомонетчики»</li>
+                        <li>18 серия — «Внутреннее расследование»</li>
+                        <li>19 и 20 серии — «Месть»</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="headingTwo" data-toggle="collapse" data-target="#collapseTwo"
+                     aria-expanded="false" aria-controls="collapseTwo">
+                  <div class="card-header__name">2 сезон</div>
+                  <div class="accordion-arrow">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="box-text">
+                      <p>1 серия</p>
+                      <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего
+                        бывшего
+                        учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                        его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                        оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                        Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                        которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                        Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                      <ul class="accordion-list">
+                        <li>2 серия</li>
+                        <li>3 серия</li>
+                        <li>4 серия</li>
+                        <li>5 серия — «Украденное оружие»</li>
+                        <li>6 серия — «Водобоязнь»</li>
+                        <li>7 серия — «Кощей»</li>
+                        <li>8 серия — «Бром»</li>
+                        <li>9 серия — «Купюра»</li>
+                        <li>10 серия — «Бессонница»</li>
+                        <li>11 серия — «Артист»</li>
+                        <li>12 серия — «Мститель»</li>
+                        <li>13 серия — «Малыш»</li>
+                        <li>14 серия — «Черная метка»</li>
+                        <li>15 серия — «Амнезия»</li>
+                        <li>16 серия — «Побег»</li>
+                        <li>17 серия — «Фальшивомонетчики»</li>
+                        <li>18 серия — «Внутреннее расследование»</li>
+                        <li>19 и 20 серии — «Месть»</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="card-header collapsed" id="headingThree" data-toggle="collapse" data-target="#collapseThree"
+                     aria-expanded="false" aria-controls="collapseThree">
+                  <div class="card-header__name">3 сезон</div>
+                  <div class="accordion-arrow">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                    </svg>
+                  </div>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                  <div class="card-body">
+                    <div class="box-text">
+                      <p>1 серия</p>
+                      <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего
+                        бывшего
+                        учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                        его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                        оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                        Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                        которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                        Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                      <ul class="accordion-list">
+                        <li>2 серия</li>
+                        <li>3 серия</li>
+                        <li>4 серия</li>
+                        <li>5 серия — «Украденное оружие»</li>
+                        <li>6 серия — «Водобоязнь»</li>
+                        <li>7 серия — «Кощей»</li>
+                        <li>8 серия — «Бром»</li>
+                        <li>9 серия — «Купюра»</li>
+                        <li>10 серия — «Бессонница»</li>
+                        <li>11 серия — «Артист»</li>
+                        <li>12 серия — «Мститель»</li>
+                        <li>13 серия — «Малыш»</li>
+                        <li>14 серия — «Черная метка»</li>
+                        <li>15 серия — «Амнезия»</li>
+                        <li>16 серия — «Побег»</li>
+                        <li>17 серия — «Фальшивомонетчики»</li>
+                        <li>18 серия — «Внутреннее расследование»</li>
+                        <li>19 и 20 серии — «Месть»</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="row d-block d-lg-none">
+      <div class="col-12">
+        <div class="frames-program">
+          <h3>Кадры из программы</h3>
+
+          <div class="frames-program-wrapper">
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame1.jpg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame2.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame3.jpg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/preview-video.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame4.jpeg" alt="">
+            </div>
+            <div class="frames-program-box" data-toggle="modal" data-target="#galleryModal">
+              <img src="img/frame5.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="product-info-row">
+          <h4>Описание серий</h4>
+          <div class="accordion" id="accordionExample2">
+            <div class="card">
+              <div class="card-header" id="headingOne1" data-toggle="collapse" data-target="#collapseOne1"
+                   aria-expanded="true" aria-controls="collapseOne1">
+                <div class="card-header__name">1 сезон</div>
+                <div class="accordion-arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
+              </div>
+
+              <div id="collapseOne1" class="collapse show" aria-labelledby="headingOne1"
+                   data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="box-text">
+                    <p>1 серия</p>
+                    <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего бывшего
+                      учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                      его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                      оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                      Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                      которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                      Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                    <ul class="accordion-list">
+                      <li>2 серия</li>
+                      <li>3 серия</li>
+                      <li>4 серия</li>
+                      <li>5 серия — «Украденное оружие»</li>
+                      <li>6 серия — «Водобоязнь»</li>
+                      <li>7 серия — «Кощей»</li>
+                      <li>8 серия — «Бром»</li>
+                      <li>9 серия — «Купюра»</li>
+                      <li>10 серия — «Бессонница»</li>
+                      <li>11 серия — «Артист»</li>
+                      <li>12 серия — «Мститель»</li>
+                      <li>13 серия — «Малыш»</li>
+                      <li>14 серия — «Черная метка»</li>
+                      <li>15 серия — «Амнезия»</li>
+                      <li>16 серия — «Побег»</li>
+                      <li>17 серия — «Фальшивомонетчики»</li>
+                      <li>18 серия — «Внутреннее расследование»</li>
+                      <li>19 и 20 серии — «Месть»</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" id="headingTwo1" data-toggle="collapse" data-target="#collapseTwo1"
+                   aria-expanded="false" aria-controls="collapseTwo1">
+                <div class="card-header__name">2 сезон</div>
+                <div class="accordion-arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
+              </div>
+              <div id="collapseTwo1" class="collapse" aria-labelledby="headingTwo1" data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="box-text">
+                    <p>1 серия</p>
+                    <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего бывшего
+                      учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                      его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                      оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                      Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                      которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                      Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                    <ul class="accordion-list">
+                      <li>2 серия</li>
+                      <li>3 серия</li>
+                      <li>4 серия</li>
+                      <li>5 серия — «Украденное оружие»</li>
+                      <li>6 серия — «Водобоязнь»</li>
+                      <li>7 серия — «Кощей»</li>
+                      <li>8 серия — «Бром»</li>
+                      <li>9 серия — «Купюра»</li>
+                      <li>10 серия — «Бессонница»</li>
+                      <li>11 серия — «Артист»</li>
+                      <li>12 серия — «Мститель»</li>
+                      <li>13 серия — «Малыш»</li>
+                      <li>14 серия — «Черная метка»</li>
+                      <li>15 серия — «Амнезия»</li>
+                      <li>16 серия — «Побег»</li>
+                      <li>17 серия — «Фальшивомонетчики»</li>
+                      <li>18 серия — «Внутреннее расследование»</li>
+                      <li>19 и 20 серии — «Месть»</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header collapsed" id="headingThree1" data-toggle="collapse" data-target="#collapseThree1"
+                   aria-expanded="false" aria-controls="collapseThree1">
+                <div class="card-header__name">3 сезон</div>
+                <div class="accordion-arrow">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                  </svg>
+                </div>
+              </div>
+              <div id="collapseThree1" class="collapse" aria-labelledby="headingThree1"
+                   data-parent="#accordionExample2">
+                <div class="card-body">
+                  <div class="box-text">
+                    <p>1 серия</p>
+                    <p>Уволенный за пьянство из полиции Максимов получает странное сообщение от Жарова — своего бывшего
+                      учителя и тестя. В SMS одно слово: «Роза». Он едет к Жарову и обнаруживает, что тот застрелен, а
+                      его собака ранена. Бывшие коллеги Макса — оперативники во главе с Гнездиловым собираются
+                      оформить смерть сыщика-пенсионера как самоубийство, а пса убить. Они категорически запрещают
+                      Максу заниматься самостоятельным расследованием. Но дочь Жарова — бывшая жена Макса Лена,
+                      которая ныне замужем за его бывшим другом — опером Леонидовым, то же считает, что отца убили.
+                      Макс забирает пса себе и начинает делать то, что умеет лучше всего — искать преступника.</p>
+
+                    <ul class="accordion-list">
+                      <li>2 серия</li>
+                      <li>3 серия</li>
+                      <li>4 серия</li>
+                      <li>5 серия — «Украденное оружие»</li>
+                      <li>6 серия — «Водобоязнь»</li>
+                      <li>7 серия — «Кощей»</li>
+                      <li>8 серия — «Бром»</li>
+                      <li>9 серия — «Купюра»</li>
+                      <li>10 серия — «Бессонница»</li>
+                      <li>11 серия — «Артист»</li>
+                      <li>12 серия — «Мститель»</li>
+                      <li>13 серия — «Малыш»</li>
+                      <li>14 серия — «Черная метка»</li>
+                      <li>15 серия — «Амнезия»</li>
+                      <li>16 серия — «Побег»</li>
+                      <li>17 серия — «Фальшивомонетчики»</li>
+                      <li>18 серия — «Внутреннее расследование»</li>
+                      <li>19 и 20 серии — «Месть»</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-grey section-callback">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2>Заказать контент</h2>
+      </div>
+
+      <div class="col-12">
+        <form method="post" class="form-callback">
+          <label>
+            <span class="input-title">Имя</span>
+            <input type="text" value="Анна" name="name">
+          </label>
+          <label>
+            <input type="text" placeholder="Фамилия" name="first_name">
+          </label>
+          <label>
+            <input type="text" placeholder="Название юридического лица" name="name_company">
+          </label>
+          <label>
+            <span class="input-title">E-mail</span>
+            <input type="text" placeholder="name@mail.ru" name="mail">
+          </label>
+          <label>
+            <span class="input-title">Телефон</span>
+            <input type="text" placeholder="+7 (___)-___-__-__" name="phone">
+          </label>
+          <label>
+            <span class="input-title">Комментарий</span>
+            <textarea name="message"></textarea>
+          </label>
+
+          <label class="checkbox">
+            <input type="checkbox" class="inp-check" name="checkbox">
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Соглашаюсь на обработку моих персональных данных</span>
+          </label>
+          <button class="btn btn-white" type="submit" disabled>Отправить</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <img src="img/footer-img.png" alt="">
+</footer>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="galleryModal" data-backdrop="static" data-keyboard="false" tabindex="-1"
+     aria-labelledby="galleryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="product-slider-wrapper">
+          <div class="product-slider-max">
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame2.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame3.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/preview-video.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame4.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame5.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-max__item"><img src="img/frame2.jpeg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="product-slider-preview">
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame2.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame3.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/preview-video.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame4.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame5.jpeg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame1.jpg" alt=""></div>
+            </div>
+            <div class="slide">
+              <div class="product-slider-preview__item"><img src="img/frame2.jpeg" alt=""></div>
+            </div>
+          </div>
+
+          <div class="slider-nav"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"
+        integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>
