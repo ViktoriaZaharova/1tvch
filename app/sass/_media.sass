@@ -72,6 +72,18 @@
     .sorting-box
       white-space: nowrap
 
+  .dropdown-menu
+    position: fixed !important
+    max-width: 330px
+    width: 100%
+    min-width: auto
+    top: 141px !important
+    left: 50% !important
+    transform: translate(-50%, 0) !important
+    border-radius: 5px
+    padding: 34px 24px 84px 32px
+    margin: 0
+
   header
     padding: 7px 0 22px
 
@@ -85,16 +97,28 @@
     .home-slider-item__body
       padding: 30px
 
-  .dropdown-menu
-    min-width: auto
+  .close-dropdown-menu
+    display: flex
 
   .sorting-menu
     font-size: 16px
+    margin: 0 0 32px
+    width: 100%
+    &:nth-child(2)
+      width: calc(100% - 17px)
+      margin-left: auto
+    &:last-child
+      margin-left: auto
+      width: calc(100% - 70px)
     li
       a
+        color: #000000
+        font-weight: normal
         white-space: nowrap
         sup
           font-size: 12px
+      .active
+        font-weight: 500
 
 @media only screen and (max-width: 992px)
   input, select
@@ -155,6 +179,8 @@
 
   h2
     font-size: 40px
+
+
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -245,6 +271,23 @@
 
   .mb-70
     margin-bottom: 20px
+
+  .result-search
+    h3
+      margin: 0 0 12px
+      font-size: 12px
+
+  .list-category
+    font-size: 14px
+
+  .list-category__links
+    height: 30px
+
+  .list-category__links-delete
+    display: flex
+
+  .result-search
+    margin-bottom: 27px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -421,6 +464,13 @@
 
 
 /* Custom, iPhone Retina */
-@media only screen and (max-width: 320px)
-  /**/
+@media only screen and (max-width: 360px)
+  .list-category__links
+    padding: 0 15px
+
+  .list-category li
+    margin: 0 10px 5px 0
+    &:last-child
+      margin: 0 0 5px
+
 

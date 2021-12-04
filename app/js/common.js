@@ -38,3 +38,8 @@ $('.btn-burger').on('click', function () {
 $('.btn-close').on('click', function () {
     $('.mobile-menu').fadeOut();
 });
+
+$('.close-dropdown-menu').on('click', function(e){
+    e.preventDefault();
+    $(this).classList.remove('show');
+});

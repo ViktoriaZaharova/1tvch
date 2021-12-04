@@ -272,6 +272,28 @@ h3
     justify-content: space-between
     flex-wrap: wrap
 
+.close-dropdown-menu
+  position: absolute
+  display: none
+  align-items: center
+  justify-content: center
+  top: 22px
+  right: 22px
+  width: 20px
+  height: 20px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #989898
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
 .sorting-menu
   position: relative
   padding: 0 0 0 15px
@@ -878,6 +900,64 @@ main
     font-size: 18px
   .box-text
     font-size: 16px
+
+.result-search
+  width: 100%
+  margin-bottom: 45px
+  h3
+    margin: 0 0 15px
+    font-size: 18px
+    font-weight: 500
+
+.list-category
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  font-size: 14px
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+
+.list-category__links
+  height: 34px
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 5px 25px
+  border: 1px solid #FCB415
+    radius: 20px
+  color: #000
+  transition: .3s ease
+  cursor: pointer
+  &:hover
+    background: #fff
+    .list-category__links-delete
+      display: flex
+
+.list-category__links-delete
+  position: relative
+  width: 8px
+  height: 8px
+  margin: 0 0 0 10px
+  display: none
+  align-items: center
+  justify-content: center
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 4px
+    top: 0
+    width: 1px
+    height: 100%
+    background: #989898
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
 
 
 @import "media"
