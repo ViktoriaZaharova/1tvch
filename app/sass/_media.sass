@@ -1,0 +1,426 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1500px)
+  .sorting-box
+    font-size: 12px
+    height: 30px
+    padding: 5px 12px 5px 20px
+    border-radius: 5px
+
+  .home-slider-item
+    width: 990px
+
+  .dropdown-menu
+    min-width: 500px
+    padding: 20px
+
+  .sorting-menu
+    margin: 0 0 20px
+    &:last-child
+      margin: 0
+
+@media only screen and (max-width: 1300px)
+  .menu
+    margin: 0 auto
+
+  .menu-category
+    margin: 0 0 15px
+
+  .filter-category-wrapper
+
+    .form-search
+      width: 100%
+      order: -1
+      margin: 0 0 12px
+      max-width: none
+
+  .menu li
+    margin: 0 20px 0 0
+
+  .mb-70
+    margin-bottom: 30px
+
+  .product-card
+    &__img
+      height: 250px
+    &__body
+      padding: 20px 60px 30px 30px
+    &__footer
+      font-size: 16px
+      margin: 20px 0 0
+
+  .mb-40
+    margin-bottom: 0
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 1200px)
+  .menu-category
+    font-size: 20px
+
+    li
+      margin: 0 20px 0 0
+
+  .filter-category-wrapper
+    .sorting-wrapper
+      flex-wrap: nowrap
+      padding: 0 0 17px
+      overflow-x: auto
+
+    .sorting-box
+      white-space: nowrap
+
+  header
+    padding: 7px 0 22px
+
+  .home-slider
+    margin: 0
+
+  .recommended
+    padding: 60px 0 50px
+
+  .recommended-box
+    .home-slider-item__body
+      padding: 30px
+
+  .dropdown-menu
+    min-width: auto
+
+  .sorting-menu
+    font-size: 16px
+    li
+      a
+        white-space: nowrap
+        sup
+          font-size: 12px
+
+@media only screen and (max-width: 992px)
+  input, select
+    height: 30px
+    padding: 0 21px
+    border-radius: 5px
+    font-size: 14px
+
+  .form-search
+    button
+      width: 15px
+      height: 18px
+    input
+      border-radius: 5px
+
+  .logo
+    max-width: 71px
+    margin: 0 auto 0 0
+
+  .menu
+    font-size: 12px
+
+  .home-slider-item
+    width: 760px
+
+  .home-slider-item__body
+    padding: 20px
+
+  .home-slider-item__content
+    max-width: 550px
+    h3
+      font-size: 20px
+
+  .box-text
+    font-size: 16px
+
+  .sales-leaders
+    padding: 100px 0
+
+  .category-programs
+    padding: 43px 0 53px
+    .form-search
+      margin: 0 auto 15px
+    .dropdown-sorting
+      margin: 0 10px 5px 0
+      &:last-child
+        margin: 0 0 5px
+    h3
+      margin: 52px auto 15px
+      font-size: 16px
+    .box-text
+      font-size: 14px
+    h2
+      margin: 0 auto 15px
+
+  .watching
+    padding: 100px 0
+
+  h2
+    font-size: 40px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  header
+    padding: 7px 0
+    margin: 0 0 15px
+    .menu
+      display: none
+    .list-language
+      display: none
+
+  .btn-burger
+    display: flex
+
+  .menu-category
+    font-size: 16px
+
+  .home-slider-item
+    width: 560px
+
+  .home-slider-item__body
+    min-height: 600px
+    .age
+      font-size: 20px
+
+  .home-slider-item__content
+    max-width: 450px
+
+  .sales-leaders
+    padding: 56px 0 60px
+    h2
+      margin: 0 auto 25px
+
+  h2
+    font-size: 25px
+    margin: 0 auto 25px
+
+  .recommended-box
+    .home-slider-item__content
+      max-width: 400px
+    .home-slider-item__body
+      min-height: 450px
+
+  .recommended h2
+    margin: 0 auto 28px
+
+  main
+    margin: 0
+
+  .page
+    padding: 8px 0 32px
+
+  .mb-45
+    margin-bottom: 25px
+
+  .product-card
+    border-radius: 5px
+    &__img
+      height: 200px
+    &__body
+      padding: 17px 57px 20px 26px
+    .age
+      top: 20px
+      right: 21px
+      font-size: 14px
+      border-radius: 5px
+    &__title
+      font-size: 18px
+    .date
+      font-size: 12px
+      margin: 0 0 15px
+    .box-text
+      font-size: 14px
+    &__footer
+      font-size: 12px
+
+  .pagination
+    font-size: 14px
+    .page-item
+      margin: 0 13px 0 0
+      .page-link
+        width: 35px
+        height: 35px
+        padding: 0
+
+  .catalog
+    padding: 8px 0 53px
+
+  .mb-70
+    margin-bottom: 20px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .home-slider-item
+    flex-direction: column
+    align-items: flex-start
+    width: 330px
+    border-radius: 0
+    margin: 0 5px
+    .age
+      position: absolute
+      top: 117px
+      right: 20px
+    &:before
+      display: none
+
+  .home-slider-item__bg
+    position: relative
+    height: 151px
+    border-radius: 5px
+    overflow: hidden
+
+  .home-slider-item__body
+    min-height: auto
+    position: initial
+    padding: 50px 0 0
+    text-align: center
+    .btn
+      margin: 15px auto 0
+    h3
+      margin: 0 auto 15px
+      font-size: 14px
+    .box-text
+      font-size: 12px
+
+  .btn
+    height: 30px
+    border-radius: 5px
+    font-size: 12px
+
+  .home-slider
+    .slick-dots
+      position: absolute
+      margin: 0
+      top: 170px
+      height: 12px
+
+  .sales-leaders-box
+    margin: 0 10px
+    width: 160px
+    height: 293px
+    border-radius: 5px
+    &__img
+      height: 160px
+      border-radius: 5px 5px 0 0
+    &__body
+      padding: 8px 10px
+      height: calc(100% - 160px)
+      flex-wrap: wrap
+    .list-tags
+      display: none
+    &__title
+      font-size: 14px
+      margin: 0 0 10px
+      line-height: 148.9%
+    .box-text
+      width: 100%
+      max-width: 100%
+    .date
+      font-size: 12px
+    .age
+      width: 30px
+      height: 24px
+      font-size: 12px
+      font-weight: 500
+      border: 1px solid #C4C4C4
+        radius: 3px
+    &__footer
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+
+      .list-tags
+        display: block
+        font-size: 12px
+        padding: 0
+        position: relative
+        left: 0
+        top: 0
+        width: fit-content
+        li
+          height: auto
+          padding: 0
+          border: none
+            radius: 0
+
+  .recommended-box
+    width: 273px
+    &:before
+      display: block
+      height: 96px
+      width: 301px
+      top: 67px
+
+    .home-slider-item__body
+      min-height: auto
+      padding: 21px 0 0
+      text-align: left
+    .box-text
+      font-size: 14px
+    .date
+      color: #989898
+      font-size: 12px
+    .age
+      font-size: 12px
+      z-index: 2
+      right: 14px
+      top: 125px
+    h3
+      position: absolute
+      margin: 0
+      top: 123px
+      padding: 0 14px
+      z-index: 2
+      width: calc(100% - 20px)
+
+
+  .box-text
+    p
+      margin: 0 0 10px
+
+  .watching
+    padding: 50px 0 18px
+    h2
+      max-width: 228px
+    .btn
+      margin: 20px auto 0
+      max-width: 180px
+      font-size: 12px
+
+  .btn-download
+    max-width: none
+    margin: 0 0 25px
+
+  .favorite-box
+    position: relative
+    &__img
+      height: 197px
+    &__body
+      padding: 17px 40px 20px 26px
+    &__title
+      font-size: 18px
+    .box-text
+      font-size: 14px
+    &__footer
+      margin: 26px 0 0
+
+  .links-blue
+    font-size: 12px
+
+  .links-favorite
+    position: absolute
+    top: 20px
+    right: 21px
+    z-index: 1
+    background: #fff
+    border-radius: 10px
+
+
+
+@media only screen and (max-width: 480px)
+  /**/
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px)
+  /**/
+

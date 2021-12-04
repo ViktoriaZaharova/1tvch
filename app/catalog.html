@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>1tvch</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:image" content="path/to/image.jpg">
+  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+
+  <!-- Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- iOS Safari -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+  <!--	<link rel="stylesheet" href="css/libs.min.css">-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+        rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/main.css">
+
+</head>
+
+<body>
+
+<div class="mobile-menu">
+  <div class="btn-close"></div>
+  <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+  <ul class="menu">
+    <li><a href="#">О компании</a></li>
+    <li><a href="#">Телеканалы</a></li>
+    <li><a href="#">Новости</a></li>
+    <li><a href="#">Операторам</a></li>
+    <li><a href="#">Рекламодателям</a></li>
+    <li><a href="#">Игры</a></li>
+    <li><a href="#">Контакты</a></li>
+  </ul>
+  <ul class="list-language">
+    <li><a href="#">EN</a></li>
+    <li><a href="#" class="active">ru</a></li>
+  </ul>
+</div>
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 d-flex flex-wrap align-items-center">
+        <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
+        <ul class="menu">
+          <li><a href="#">О компании</a></li>
+          <li><a href="#">Телеканалы</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Операторам</a></li>
+          <li><a href="#">Рекламодателям</a></li>
+          <li><a href="#">Игры</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="list-language">
+          <li><a href="#">EN</a></li>
+          <li><a href="#" class="active">ru</a></li>
+        </ul>
+
+        <div class="btn-burger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="page catalog">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <ul class="menu-category">
+          <li><a href="#" class="menu-category__links">Телеканалы</a></li>
+          <li><a href="#" class="menu-category__links active">Контент</a></li>
+        </ul>
+      </div>
+      <div class="col-12 mb-40 d-flex flex-wrap align-items-center filter-category-wrapper">
+        <div class="sorting-wrapper">
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Активный отдых</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Познавательные передачи</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Путешествия</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Животный мир</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Жизнь за городом</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="dropdown dropdown-sorting">
+            <div class="sorting-box dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <div class="sorting-box__text">Молодежные передачи</div>
+              <div class="sorting-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#arrow-bottom"></use>
+                </svg>
+              </div>
+            </div>
+            <div class="dropdown-menu">
+              <div class="dropdown-menu__wrapper">
+                <ul class="sorting-menu">
+                  <li><a href="#" class="active">Животноводство <sup>234</sup></a></li>
+                  <li><a href="#">Дикие животные <sup>142</sup></a></li>
+                  <li><a href="#">Ветеринары <sup>134</sup></a></li>
+                  <li><a href="#">Заповедники <sup>11</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Про кошек <sup>4</sup></a></li>
+                  <li><a href="#" class="active">Про собак <sup>34</sup></a></li>
+                  <li><a href="#">Про лошадей <sup>25</sup></a></li>
+                </ul>
+                <ul class="sorting-menu">
+                  <li><a href="#">Все о корги <sup>4</sup></a></li>
+                  <li><a href="#">Собачники <sup>34</sup></a></li>
+                  <li><a href="#">Кони <sup>25</sup></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form method="post" class="form-search">
+          <label><input type="text" placeholder="Найти"></label>
+          <button type="submit">
+            <svg class="svg-icon">
+              <use xlink:href="img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-my container">
+    <div class="row">
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/slide4.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Звериный доктор</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite2.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Кошачий алфавит</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Главный герой — маленький щенок Аля, помесь с борзой, который растет на глазах зрителей. В нашем «ЖЖ» есть все: забавные и трагические истории, полезные сведения, любопытные наблюдения, практические советы.</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite3.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Живой журнал</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite1.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Зооакадемия</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite5.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Собачье дело</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Главный герой — маленький щенок Аля, помесь с борзой, который растет на глазах зрителей. В нашем «ЖЖ» есть все: забавные и трагические истории, полезные сведения, любопытные наблюдения, практические советы.</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite6.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Живой журнал</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite7.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Звериный доктор</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite8.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Хвостатые друзья</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Главный герой — маленький щенок Аля, помесь с борзой, который растет на глазах зрителей. В нашем «ЖЖ» есть все: забавные и трагические истории, полезные сведения, любопытные наблюдения, практические советы.</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-6 col-lg-4 mb-70">
+        <div class="product-card">
+          <div class="product-card__img"><img src="img/favorite9.jpeg" alt=""></div>
+          <div class="product-card__body">
+            <div class="age">12+</div>
+            <a href="#" class="product-card__title">Живой журнал</a>
+            <div class="date">2010 г., Россия</div>
+            <div class="box-text">
+              <p>Программа «Собачье дело» научит разбираться в породах, воспитывать щенков и искать подход к собакам со
+                сложным характером и хрупким здоровьем. Полезные советы, как сделать жизнь с собакой счастливой!</p>
+            </div>
+            <div class="product-card__footer">
+              <p>1 сезон</p>
+              <p>10 серий х 15 минут</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12">
+        <nav class="pagination-nav">
+          <ul class="pagination">
+            <li class="page-item active" aria-current="page">
+              <span class="page-link">1</span>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">4</a></li>
+            <li class="page-item"><a class="page-link" href="#">...</a></li>
+            <li class="page-item"><a class="page-link" href="#">26</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <img src="img/footer-img.png" alt="">
+</footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/common.js"></script>
+
+</body>
+</html>

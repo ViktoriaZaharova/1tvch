@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" display="none">
+
+    <symbol id="arrow-left" viewBox="0 0 18 32">
+        <path d="M15.75 1.375L1.5 15.625L16.5 30.625" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="arrow-right" viewBox="0 0 18 32">
+        <path d="M2.25 30.625L16.5 16.375L1.5 1.375" stroke-width="2"/>
+    </symbol>
+
+    <symbol id="arrow-bottom" viewBox="0 0 12 7">
+        <path d="M10.8995 0.999979L5.94977 5.94973L1.00002 0.999979"/>
+    </symbol>
+
+
+    <symbol id="heart" viewBox="0 0 36 32">
+        <path d="M35.4434 6.773C31.607 -4.50577 19.151 0.554732 17.999 6.1874C16.4144 0.18481 4.26498 -4.29329 0.556978 6.78132C-3.57162 19.1161 16.559 30.1862 17.999 32C19.4378 30.5587 39.5708 18.9075 35.4434 6.773Z"/>
+    </symbol>
+
+    <symbol id="search" viewBox="0 0 20 20">
+        <circle cx="7.98" cy="8.09999" r="7.48"/>
+        <line x1="13.2735" y1="13.4464" x2="19.3535" y2="19.5264"/>
+    </symbol>
+
+</svg>

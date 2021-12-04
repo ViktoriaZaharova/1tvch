@@ -1,0 +1,884 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+//*::-webkit-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*::-moz-placeholder
+//  color: #666
+//  opacity: 1
+//
+//*:-ms-input-placeholder
+//  color: #666
+//  opacity: 1
+//
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #1A1A1A
+
+html, body
+  overflow-x: hidden
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  padding: 0 20px
+  box-sizing: border-box
+  font-family: $default-font
+  font-size: 16px
+  color: #000000
+  border: none
+    radius: 10px
+  background: #fff
+  width: 100%
+  height: 40px
+
+  &::placeholder
+    color: #A2A2A2
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+label
+  width: 100%
+  display: block
+
+.btn, button
+  outline: none
+  box-shadow: none
+  font-family: $default-font
+  padding: 0
+  border: none
+    radius: 0
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 12px 52px
+  font-size: 14px
+  font-weight: 500
+  color: #000
+  border-radius: 10px
+  width: fit-content
+  height: 50px
+  &:hover
+    background: $accent
+    color: #fff
+
+.btn-white
+  background: #fff
+
+
+.container
+  max-width: 1560px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+
+h2
+  text-align: center
+  width: 100%
+  font-size: 56px
+  font-weight: 900
+  margin: 0 auto 30px
+
+h3
+  font-size: 20px
+  font-weight: bold
+  width: 100%
+
+.box-text
+  font-size: 20px
+  line-height: 150%
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+.slick-slider
+  width: 100%
+
+.slick-slide
+  outline: none
+
+.slick-dots
+  position: relative
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  bottom: 0
+  padding: 0
+
+  li
+    cursor: pointer
+    border-radius: 50%
+    transition: .3s ease
+    width: 12px
+    height: 12px
+    background: #C4C4C4
+    opacity: .3
+    margin: 0 20px 0 0
+
+    &:last-child
+      margin: 0
+
+    button
+      display: none
+
+  .slick-active
+    opacity: 1
+
+.sorting-wrapper
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  margin: 0 auto 0 0
+
+.dropdown-sorting
+  margin: 0 10px 0 0
+
+  &:last-child
+    margin: 0
+
+  &.show
+    .sorting-box
+      color: $accent
+
+      &__icon
+        stroke: $accent
+        transform: rotate(180deg)
+
+.sorting-box
+  background: #fff
+  padding: 12px 20px
+  border-radius: 10px
+  font-size: 14px
+  font-weight: 500
+  color: #000
+  display: flex
+  align-items: center
+  cursor: pointer
+  border: none
+
+  &:after
+    display: none
+
+  &__icon
+    fill: none
+    margin: 0 0 0 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    stroke: #000
+    width: 7px
+    height: 7px
+
+.dropdown-menu
+  border: none
+  margin: 10px 0 0
+  min-width: 797px
+  border-radius: 10px
+  background: #fff
+  padding: 43px 60px 47px 32px
+
+  &__wrapper
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+
+.sorting-menu
+  position: relative
+  padding: 0 0 0 15px
+  border-left: 1px solid $accent
+  font-size: 18px
+  font-weight: 500
+
+  li
+    margin: 0 0 19px
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #C4C4C4
+      position: relative
+
+      &:before
+        content: ''
+        position: absolute
+        width: 19px
+        height: 20px
+        top: 2px
+        left: -23px
+
+      sup
+        font-size: 14px
+
+      &:hover
+        color: #000
+
+        &:before
+          background: #fff url("../img/arrow-drop.svg") no-repeat center
+            size: 6px
+
+    .active
+      color: #000
+
+      &:before
+        background: #fff url("../img/arrow-drop.svg") no-repeat center
+          size: 6px
+
+.bg-grey
+  background: #4A4A4A
+  color: #fff
+
+//header
+header
+  padding: 25px 0 39px
+
+.logo
+  display: flex
+  align-items: center
+  max-width: 161px
+  width: 100%
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 93px 0 auto
+
+  li
+    margin: 0 43px 0 0
+
+    a
+      color: #fff
+      position: relative
+
+      &:before, &:after
+        content: ''
+        position: absolute
+        bottom: 2px
+        width: 1px
+        background: $accent
+        transition: .3s ease
+
+      &:before
+        left: -8px
+
+      &:after
+        right: -8px
+
+      &:hover
+        color: #fff
+
+        &:before, &:after
+          height: 13px
+
+.list-language
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 10px
+
+  li
+    margin: 0 7px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      width: 30px
+      height: 30px
+      border-radius: 7px
+      background: #000
+      color: #fff
+
+    .active
+      background: #282828
+      color: #ABABAB
+
+.btn-burger
+  display: none
+  width: 29px
+  height: 20px
+  flex-direction: column
+  justify-content: space-between
+  span
+    display: block
+    width: 100%
+    height: 4px
+    border-radius: 10px
+    background: #ABABAB
+
+.mobile-menu
+  position: fixed
+  right: 0
+  top: 0
+  width: 100%
+  height: 100%
+  max-width: 280px
+  padding: 30px
+  background: #1A1A1A
+  color: #fff
+  z-index: 5
+  display: none
+  .menu
+    font-size: 18px
+    margin: 20px 0
+
+    li
+      margin: 0 0 15px
+      width: 100%
+
+.btn-close
+  width: 20px
+  height: 20px
+  position: absolute
+  right: 20px
+  top: 20px
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: #fff
+
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+//home-slider
+main
+  margin: 8px 0 0
+
+.home-slider
+  margin: 42px 0 0
+  .slick-dots
+    margin: 40px 0 0
+  .slick-slide
+    opacity: .5
+  .slick-center
+    opacity: 1
+
+.home-slider-item
+  position: relative
+  border-radius: 10px
+  overflow: hidden
+  width: 1527px
+  margin: 0 20px
+  z-index: 1
+
+  &:before
+    content: ''
+    position: absolute
+    background: linear-gradient(180deg, rgba(26, 26, 26, 0) 0%, rgba(26, 26, 26, 0.8) 100%)
+    mix-blend-mode: multiply
+    height: 336px
+    width: calc(100% + 70px)
+    left: 50%
+    transform: translate(-50%, 0)
+    bottom: -33px
+    z-index: 1
+
+  &__bg
+    width: 100%
+    height: 100%
+    object-fit: cover
+    top: 0
+    left: 50%
+    transform: translate(-50%, 0)
+    position: absolute
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__content
+    max-width: 692px
+    width: 100%
+
+    h3
+      margin: 0 0 30px
+      font-size: 40px
+      font-weight: 900
+  .btn
+    margin: 30px 0 0
+
+.home-slider-item__body
+  position: relative
+  z-index: 1
+  color: #fff
+  padding: 63px 88px
+  min-height: 700px
+  display: flex
+  align-items: flex-end
+  justify-content: space-between
+  flex-wrap: wrap
+
+  .age
+    font-size: 30px
+    font-weight: 900
+
+
+
+//main
+.menu-category
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 30px
+  font-size: 26px
+  font-weight: 500
+
+  li
+    margin: 0 39px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      color: #fff
+      opacity: 0.3
+
+      &:hover
+        opacity: 1
+
+    .active
+      opacity: 1
+
+.form-search
+  width: 100%
+  max-width: 273px
+  position: relative
+
+  button
+    width: 19px
+    height: 19px
+    position: absolute
+    stroke: #C4C4C4
+    right: 21px
+    top: 50%
+    transform: translate(0, -50%)
+    fill: none
+    background: transparent
+    display: flex
+    align-items: center
+    justify-content: center
+  input
+    background: transparent
+    border: 1px solid #C4C4C4
+      radius: 10px
+    color: rgba(#fff, .3)
+
+    &::placeholder
+      color: rgba(#fff, .3)
+
+    &:hover, &:focus
+      background: #4A4A4A
+      border: 1px solid #FFFFFF
+
+//.sales-leaders
+.sales-leaders
+  padding: 190px 0
+  h2
+    color: #fff
+    margin: 0 auto 84px
+
+
+.sales-leaders-box
+  width: 431px
+  height: 429px
+  margin: 0 20px
+  background: #fff
+  border-radius: 10px
+  position: relative
+  &__img
+    border-radius: 10px 10px 0 0
+    overflow: hidden
+    width: 100%
+    height: 244px
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    background: #C4C4C4
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  .list-tags
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    position: absolute
+    padding: 25px 30px
+    color: #000000
+    font-size: 14px
+    li
+      border-radius: 10px
+      background: rgba(#fff, .7)
+      padding: 7px 22px
+      height: 36px
+      display: flex
+      align-items: center
+      justify-content: center
+  &__body
+    width: 100%
+    padding: 30px 34px 40px 30px
+    display: flex
+    align-items: flex-start
+    height: calc(100% - 429px)
+  &__title
+    color: #000
+    font-size: 32px
+    font-weight: 900
+    &:hover
+      color: $accent
+  .date
+    margin: 10px 0 0
+    color: #989898
+    font-size: 14px
+  .age
+
+    width: 44px
+    height: 36px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #C4C4C4
+      radius: 10px
+    font-size: 14px
+    font-weight: 500
+    color: #C4C4C4
+  &__footer
+    margin: 0 0 0 auto
+    .list-tags
+      display: none
+
+//category-programs
+.category-programs
+  padding: 114px 0 263px
+  .form-search
+    max-width: 557px
+    margin: 0 auto 20px
+  h3
+    text-align: center
+    margin: 152px auto 34px
+  .sorting-wrapper
+    justify-content: center
+
+//recommended
+.recommended
+  padding: 130px 0 153px
+  h2
+    color: #fff
+    margin: 0 auto 80px
+
+
+
+.recommended-box
+
+  width: 1060px
+  .home-slider-item__body
+    padding: 53px 54px
+    min-height: 595px
+  .age
+    font-size: 18px
+    font-weight: 500
+  .box-text
+    font-size: 16px
+    line-height: 150%
+  .home-slider-item__content
+    max-width: 630px
+
+//watching
+.watching
+  padding: 40px 0 190px
+  .btn
+    max-width: 275px
+    font-size: 16px
+    padding: 0 10px
+    width: 100%
+    margin: 70px auto 0
+  h2
+    color: #fff
+
+//favorites page
+.page
+  background: #E8E8E8
+  padding: 38px 0 93px
+  .menu-category
+    li
+      a
+        color: #000
+      .active
+        color: #000
+  .form-search
+    input
+      color: #A2A2A2
+      &::placeholder
+        color: #A2A2A2
+
+.links-blue
+  text-decoration: underline
+  color: #283EFF
+  font-size: 14px
+  margin: 0 0 13px
+  &:last-child
+    margin: 0
+  &:hover
+    color: $accent
+
+.links-favorite
+  display: flex
+  align-items: center
+  justify-content: center
+  fill: #FCB415
+  width: 50px
+  height: 50px
+  padding: 9px 7px
+
+.btn-download
+  margin: 0 0 33px
+  padding: 10px 46px
+
+.mb-40
+  margin-bottom: 40px
+
+.mb-45
+  margin-bottom: 45px
+
+.mb-70
+  margin-bottom: 70px
+
+.favorite-box
+  width: 100%
+  height: 100%
+  border-radius: 10px
+  overflow: hidden
+  background: #fff
+  &__img
+    width: 100%
+    height: 288px
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 38px 34px 35px 40px
+  &__title
+    margin: 0 0 11px
+    font-size: 22px
+    font-weight: 900
+    color: #000
+    &:hover
+      color: $accent
+  .box-text
+    font-size: 14px
+  &__footer
+    margin: 49px 0 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    width: 100%
+
+//catalog
+.container-my
+  max-width: 1872px
+
+.catalog
+  padding: 38px 0 97px
+
+.pagination-nav
+  width: 100%
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  border-radius: 0
+  font-size: 23px
+  font-family: $default-font
+  .page-item
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+    &:first-child
+      .page-link
+        border-radius: 50%
+    .page-link
+      width: 54px
+      height: 54px
+      border-radius: 50%
+      display: flex
+      align-items: center
+      justify-content: center
+      border: none
+      background: transparent
+      color: #1A1A1A
+      &:hover
+        background: $accent
+        color: #fff
+  .page-item.active
+      .page-link
+        background: #fff
+        color: #1A1A1A
+
+.product-card
+  width: 100%
+  height: 100%
+  background: #fff
+  border-radius: 10px
+  overflow: hidden
+  &__img
+    position: relative
+    width: 100%
+    display: flex
+    align-items: flex-start
+    justify-content: flex-start
+    overflow: hidden
+    height: 350px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 30px 70px 42px 46px
+    position: relative
+  .age
+    position: absolute
+    right: 40px
+    top: 37px
+    display: flex
+    align-items: center
+    justify-content: center
+    border: 1px solid #989898
+      radius: 10px
+    width: 44px
+    height: 36px
+    color: #989898
+    font-size: 14px
+    font-weight: 500
+  &__title
+    font-size: 22px
+    font-weight: 900
+    color: #000
+    margin: 0 0 15px
+    &:hover
+      color: $accent
+  .date
+    margin: 0 0 20px
+    color: #989898
+  &__footer
+    margin: 70px 0 0
+    font-size: 18px
+  .box-text
+    font-size: 16px
+
+
+@import "media"
+// Всегда в конце
